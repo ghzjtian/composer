@@ -1,3 +1,18 @@
+## 注意： 
+在 composer.json 中引入文件后，记得在入口文件处加载 autoload.php 文件
+
+如:
+```
+require '../vendor/autoload.php';
+//require(__DIR__.'/vendor/autoload.php');
+use Symfony\Component\HttpFoundation\Request;
+```
+否则的话，会出现 File Not Found 错误.
+
+***
+***
+***
+
 Composer - Dependency Management for PHP
 ========================================
 
